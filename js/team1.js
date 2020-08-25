@@ -1,0 +1,1 @@
+"use strict";function f6(){var xhr=new XMLHttpRequest;xhr.open("GET","../news.php?hide=7"),xhr.send(null),xhr.onreadystatechange=function(){var arr,arr2,ban;4==xhr.readyState&&200==xhr.status&&(arr=eval(xhr.responseText),arr2=arr[0].join().split(" "),ban=document.getElementsByClassName("banner"))}}f6();

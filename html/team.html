@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>axm</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/team.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header">
+            <div class="header_">
+                <div></div>
+                <ul>
+                    <li> <a href="../html/index.html">首页</a> </li>
+                    <li>关于我们</li>
+                    <li>产品介绍</li>
+                    <li> <a href="../html/team.html">设计团队</a> </li>
+                    <li> <a href="../html/clothimgs.html">新闻动态</a> </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner_img">
+            <img src="../img/t1.jpg" alt="" class="active">
+            <img src="../img/cp1.jpg" alt="">
+            <img src="../img/cs1_02.png" alt="">
+        </div>
+        <button>&lt;</button>
+        <button>&gt;</button>
+        <ul>
+            <li class="active" dd="0"></li>
+            <li dd="1"></li>
+            <li dd="2"></li>
+        </ul>
+    </div>
+
+
+
+    <!-- nav -->
+    <nav>
+        <div class="clothimgs">
+            <div class="clothimgs_ ">
+                <h2 class="f_l"></h2>
+                <div class="clothimgs_l f_r">
+
+                    <div class="tab">
+                        <ul class="f_r">
+                            <li><a href="../index.html">首页 ：&nbsp;&nbsp;</a></li>
+                            <li><a href="../index.html">设计团队 >&nbsp;&nbsp;</a></li>
+                            <li>
+                                <em class="active">刘清扬</em>
+                                <em>韩露露</em>
+                                <em>周翔宇</em>
+                                <em>罗铮</em>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <h3 class="f_l">设计团队</h3>
+            </div>
+            <div class="nav">
+                <div class="nav_ f_l">
+                    <p></p>
+                    <div class="btn">
+                        <ul class="f_l">
+                            <li index="0" class="active">刘清扬</li>
+                            <li index="1">韩露露 </li>
+                            <li index="2">周翔宇</li>
+                            <li index="3">罗铮</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <h6 class="active">
+                    <div class="nav_r f_r">
+                        <h2 class="f_l">生平简介 &nbsp;&nbsp;<span>BRIEF ACCOUNT OF THE AUTHOR'S LIFE
+                            </span></h2>
+                        <aside class="as">
+
+                        </aside>
+                        <h3 class="f_l">设计风格 &nbsp;&nbsp;<span>DESIGN STYLE
+                            </span></h3>
+                        <article class="as1">
+
+                        </article>
+
+
+                        </p>
+                        <h4 class="f_l">设计作品 &nbsp;&nbsp;<span>DESIGN WORKS
+                            </span></h4>
+                    </div>
+
+                </h6>
+
+                <h6>
+                    <div class="nav_r f_r">
+                        <h2 class="f_l">生平简介 &nbsp;&nbsp;<span>BRIEF ACCOUNT OF THE AUTHOR'S LIFE
+                            </span></h2>
+                        <aside class="as">
+
+                        </aside>
+
+                        <h3 class="f_l">设计风格 &nbsp;&nbsp;<span>DESIGN STYLE
+                            </span></h3>
+                        <article class="as1">
+
+                        </article>
+
+                        <h4 class="f_l">设计作品 &nbsp;&nbsp;<span>DESIGN WORKS
+                            </span></h4>
+                    </div>
+
+                    <h6>
+                        <div class="nav_r f_r">
+                            <h2 class="f_l">生平简介 &nbsp;&nbsp;<span>BRIEF ACCOUNT OF THE AUTHOR'S LIFE
+                                </span></h2>
+                            <aside class="as">
+
+                            </aside>
+
+                            <h3 class="f_l">设计风格 &nbsp;&nbsp;<span>DESIGN STYLE
+                                </span></h3>
+                            <article class="as1">
+
+                            </article>
+
+                            <h4 class="f_l">设计作品 &nbsp;&nbsp;<span>DESIGN WORKS
+                                </span></h4>
+                        </div>
+
+                    </h6> 
+
+                    <h6>
+                        <div class="nav_r f_r">
+                            <h2 class="f_l">生平简介 &nbsp;&nbsp;<span>BRIEF ACCOUNT OF THE AUTHOR'S LIFE
+                                </span></h2>
+                            <aside class="as">
+
+                            </aside>
+
+                            </p>
+
+                            <h3 class="f_l">设计风格 &nbsp;&nbsp;<span>DESIGN STYLE
+                                </span></h3>
+                            <article class="as1">
+
+                            </article>
+
+
+                            </p>
+                            <h4 class="f_l">设计作品 &nbsp;&nbsp;<span>DESIGN WORKS
+                                </span></h4>
+                        </div>
+
+                    </h6>
+            </div>
+    </nav>
+    <footer>
+        <div class="footer">
+            <div>
+                <p>COPYRIGHT◎2014 GIRDEAR ALL RIGHTS RESERVED版权所有:浙江印象实业股份有限公司浙ICP备15046969号
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/team.js"></script>
+    <script src="../js/clothing.js"></script>
+    <script>
+        let fig = document.querySelectorAll("h6")
+        let as = document.querySelectorAll(".as")
+        let as1 = document.querySelectorAll(".as1")
+        function f11(xx, cc, dd, ee) {
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", "../news.php?hide=4");
+            xhr.send(null);
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var arr = eval(xhr.responseText);
+                    let nav = xx.querySelector(".nav_r");
+                    console.log(arr[ee])
+                    let p1 = document.createElement("p")
+                    p1.className = "f_l";
+                    p1.innerHTML = arr[ee].content;
+                    cc.appendChild(p1)
+                    let img = document.createElement("img");
+                    img.src = arr[ee].src;
+                    img.className = "f_r"
+                    cc.appendChild(img)
+                    let p2 = document.createElement("p");
+                    p2.className = "f_l";
+                    p2.innerHTML = arr[ee].title;
+                    dd.appendChild(p2);
+                }
+            }
+            let navv = xx.querySelector(".nav_r");
+            let xhrr = new XMLHttpRequest();
+            xhrr.open("GET", "../news.php?hide=5");
+            xhrr.send(null);
+            xhrr.onreadystatechange = () => {
+                if (xhrr.readyState == 4 && xhrr.status == 200) {
+                    var arrr = eval(xhrr.responseText);
+                    let nav11 = xx.getElementsByClassName("nav_ll");
+                    let arr22 = arrr[ee].join().split(" ");
+                    for (let i = 0; i < arr22.length; i++) {
+                        let img = new Image;
+                        img.src = arr22[i];
+                        navv.appendChild(img);
+                    }
+                }
+            }
+        }
+        f11(fig[0], as[0], as1[0], 0)
+        f11(fig[1], as[1], as1[1], 1)
+        f11(fig[2], as[2], as1[2], 2)
+        f11(fig[3], as[3], as1[3], 3)
+
+    </script>
+     <script src="../js/team1.js"></script>
+</body>
+
+</html>
